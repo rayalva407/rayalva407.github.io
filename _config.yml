@@ -1,11 +1,11 @@
 # Site settings
-author: Ray Alva
-title: 
+author: Raymundo Alva
+title: Why Software Engineering?
 header-img: img/home-bg.png
 email: rayalva407@gmail.com
-copyright_name: Ray Alva
+copyright_name: Raymundo Alva
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Learning To Code
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  rayalva407
