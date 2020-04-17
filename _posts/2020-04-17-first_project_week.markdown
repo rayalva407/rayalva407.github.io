@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "First Project Week"
-date:       2020-04-17 21:34:33 +0000
+date:       2020-04-17 17:34:34 -0400
 permalink:  first_project_week
 ---
 
