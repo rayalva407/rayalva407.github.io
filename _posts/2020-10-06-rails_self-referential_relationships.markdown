@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "Rails Self-Referential Relationships"
-date:       2020-10-06 07:26:31 +0000
+date:       2020-10-06 03:26:32 -0400
 permalink:  rails_self-referential_relationships
 ---
 
 
-In a self-referential relationship a class can interact with itself using a join table. While brainstorming some ideas for my new Rails project I found the topic of self-referential  `has_many, through`relationships. After reading about it I decided to try it out to see if it would fit what I wanted to do. At first it was a little confusing at first but after some practice with it, I found that it was very simple. I didn't end up using this kind of relationship for my project but it was really fun to learn about it. These sort of relationships are very commonly used in social media. Some examples are followers, friendships, messages, and friend requests. I found that the messages example was the easiest to understand.
+In a self-referential relationship a class can interact with itself using a join table. While brainstorming some ideas for my new Rails project I found the topic of self-referential  `has_many, through`relationships. After reading about it I decided to try it out to see if it would fit what I wanted to do. At first it was a little confusing but after some practice with it, I found that it was very simple. I didn't end up using this kind of relationship for my project but it was really fun to learn about it. These sort of relationships are very commonly used in social media. Some examples are followers, friendships, messages, and friend requests. I found that the messages example was the easiest to understand.
 
 ## How It Works
 
@@ -26,7 +26,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
 end
 ```
 
-Next we will create a the messages table. This will serve as the join table through which the users can interact. We will give them a `sender_id` and a `recipient_id` along with the message's content. the `sender_id` and `recipient_id` are both ids that belong to the User table.
+Next we will create the messages table. This will serve as the join table. through which the users can interact. We will give them a `sender_id` and a `recipient_id` along with the message's content. the `sender_id` and `recipient_id` are both ids that belong to the User table.
 
 ```
 #db/migrate/001_create_messages.rb
@@ -43,7 +43,7 @@ class CreateMessages < ActiveRecord::Migration[6.0]
 end
 ```
 
-Now we have to work with our Message Model. We are going to tell the model that it `belongs to` two both a Sender and a Recipient. Even though they come from the same class they have different foreign_key names on the messages table.
+Now we have to work with our Message Model. We are going to tell the model that it `belongs_to` two both a Sender and a Recipient. Even though they come from the same class they have different foreign_key names on the messages table.
 
 ```
 #app/models/message.rb
