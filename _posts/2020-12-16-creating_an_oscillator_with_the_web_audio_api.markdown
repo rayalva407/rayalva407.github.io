@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Creating An Oscillator With The Web Audio API"
-date:       2020-12-17 00:40:36 +0000
+date:       2020-12-16 19:40:37 -0500
 permalink:  creating_an_oscillator_with_the_web_audio_api
 ---
 
@@ -27,7 +27,9 @@ Great now to the fun part! In order for us to do anything with the Web Audio API
 ```
 const context = new AudioContext(); //allows access to webaudioapi
 const osc = document.querySelector('#osc'); //grabs the button
+```
 Next we are going to create a function that will make sound for as long as we hold a button. In order to do that we need to create an oscillator inside the function and assign it a waveform type and frequency. There are four waveform types that most synthesizers use to make sound. They are called the “sine wave”, “triangle wave”, “square/pulse wave” and “saw wave”. These waves have different sonic properties. The saw wave has a harsh tone and the sine wave has more of a mellow tone. Read more about oscillator waveforms here. Let’s go ahead and build this function.
+```
 osc.onmousedown = function() {
   let oscPitch = document.querySelector('#oscPitch').value; //assigning the value of the slider to a variable
 oscillator = context.createOscillator(); //creates oscillator
