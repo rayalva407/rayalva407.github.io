@@ -1,0 +1,203 @@
+* {
+  font-family: "Ubuntu";
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0c0c0c;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  padding: 40px;
+  list-style-type: none;
+  margin: 0;
+}
+
+h1 {
+  color: purple;
+}
+
+.icons {
+  font-size: 50px;
+}
+
+#navbar {
+  position: fixed;
+  background-color: #141414;
+  box-shadow: 0px 1px 3px 2px #141414; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+#navbar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar h3 {
+  padding: 20px;
+}
+
+#my-image {
+  height: 250px;
+  width: auto;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  font-size: 21pt;
+}
+
+#welcome-section h1 {
+  padding: 20px;
+}
+
+#welcome-section h4 {
+  padding: 20px;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
+  height: 100vh;
+  width: auto;
+  font-size: 24pt;
+}
+
+#about-me-p {
+    width: 50%;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 100vh;
+  width: auto;
+  font-size: 24pt;
+}
+
+#projects h1 {
+  padding: 50px;
+}
+
+#tile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 80vh;
+}
+
+.project-tile {
+  width: 20vw;
+  height: 68vh;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #141414;
+  text-align: left;
+  border-radius: 3%;
+  font-size: 2vh;
+  transition: all .2s ease-in-out;
+}
+
+.project-tile:hover {
+  transform: scale(1.1)
+}
+
+.project-img {
+  width: 100%;
+  height: 40vh;
+  border-radius: 3% 3% 0 0;
+}
+
+.project-desc {
+  padding: 15px;
+}
+
+#home-swap {
+  background-color: #e3453d;
+}
+
+#cycles {
+  background-color: #fad434;
+}
+
+#do-something {
+  background-color: #5ae6ff;
+}
+
+#contact {
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5vw;
+  padding: 50px;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    display: none;
+  }
+  
+  #welcome-section {
+    margin: 0;
+  }
+  
+  #about-me {
+    font-size: 18pt;
+  }
+  
+  #about-me-p {
+    width: 75%;
+  }
+  
+  #tile-section {
+    flex-direction: column;
+  }
+  
+  .project-tile {
+    width: 80%; 
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
