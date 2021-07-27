@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #050713;
+  background-color: #010731;
   color: white;
 }
 
@@ -91,7 +91,12 @@ h1 {
 }
 
 #about-me-p {
-  width: 50%;
+  background-color: #ff3406d8;
+  background-image: url(Pattern.png);
+  border-radius: 20px;
+  width: 85vw;
+  padding: 5%;
+  box-shadow: 0 4px 15px black;
 }
 
 #projects {
@@ -149,11 +154,11 @@ h1 {
 }
 
 #cycles {
-  background-color: #fad434;
+  background-color: #fad234e7;
 }
 
 #do-something {
-  background-color: #5ae6ff;
+  background-color: #5ae6ffb7;
 }
 
 #contact {
