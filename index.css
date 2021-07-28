@@ -67,7 +67,7 @@ h1 {
   align-items: center;
   height: 100vh;
   width: auto;
-  font-size: 21pt;
+  font-size: 2vw;
 }
 
 #welcome h1 {
@@ -180,9 +180,10 @@ h1 {
 #contact-info {
   display: flex;
   flex-direction: column;
-  font-size: 3vw;
+  font-size: 2.5vw;
   padding: 50px;
 }
+
 
 @media (max-width: 800px) {
   #navbar {
@@ -191,6 +192,7 @@ h1 {
 
   #welcome {
     margin: 0;
+    font-size: 5vw;
   }
 
   #about-me {
@@ -207,6 +209,10 @@ h1 {
 
   #projects h1 {
     padding: 0;
+  }
+
+  #contact-info {
+    font-size: 5vw;
   }
 
   .project-tile a {
@@ -233,6 +239,47 @@ h1 {
     padding: 10px;
     width: 80%;
     height: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .project-tile {
+    font-size: 3.3vw;
+    margin: 20px;
+    justify-content: space-around;
+  }
+
+  #welcome {
+    font-size: 8vw;
+  }
+
+  #welcome a {
+    font-size: 10vw;
+    padding: 3px;
+  }
+
+  #projects h1 {
+    padding: 45px;
+  }
+
+  #contact {
+    flex-direction: column;
+    padding: 0px;
+    height: 100vh
+  }
+
+  #contact-info {
+    text-align: center;
+    font-size: 9vw;
+  }
+
+  #contact-info a{
+    font-size: 20vw;
+    padding: 10px;
+  }
+
+  #my-image {
+    padding: 5px;
   }
 }
 
