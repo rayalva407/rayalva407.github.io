@@ -58,6 +58,13 @@ h1 {
   padding: 10px;
 }
 
+#my-image-1 {
+  height: 30vh;
+  width: auto;
+  border-radius: 30px;
+  padding: 10px;
+}
+
 #welcome {
   display: flex;
   flex-direction: column;
@@ -92,7 +99,7 @@ h1 {
 }
 
 #about-me-p {
-  background-color: #e42904dc;
+  background-color: #dd1849;
   background-image: url(Pattern.png);
   width: auto;
   padding: 5%;
@@ -184,7 +191,6 @@ h1 {
   padding: 50px;
 }
 
-
 @media (max-width: 800px) {
   #navbar {
     display: none;
@@ -265,7 +271,7 @@ h1 {
   #contact {
     flex-direction: column;
     padding: 0px;
-    height: 100vh
+    height: 100vh;
   }
 
   #contact-info {
@@ -273,7 +279,7 @@ h1 {
     font-size: 9vw;
   }
 
-  #contact-info a{
+  #contact-info a {
     font-size: 20vw;
     padding: 10px;
   }
