@@ -1,5 +1,5 @@
 * {
-  font-family: "Ubuntu";
+  font-family: 'Noto Sans JP', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -95,7 +95,7 @@ h1 {
   text-align: left;
   height: 100vh;
   width: auto;
-  font-size: 24pt;
+  font-size: 2vw;
 }
 
 #about-me-p {
@@ -146,7 +146,7 @@ h1 {
   color: #141414;
   text-align: left;
   border-radius: 3%;
-  font-size: 2vh;
+  font-size: 1.6vh;
   transition: all 0.2s ease-in-out;
 }
 
@@ -239,7 +239,7 @@ h1 {
     height: auto;
     border-radius: 10px;
     width: 95vw;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     text-align: justify;
     flex-direction: row;
   }
@@ -275,6 +275,10 @@ h1 {
     padding: 3px;
   }
 
+  #about-me-p {
+    font-size: 5vw;
+  }
+
   #projects h1 {
     padding: 45px;
   }
@@ -287,11 +291,11 @@ h1 {
 
   #contact-info {
     text-align: center;
-    font-size: 9vw;
+    font-size: 7vw;
   }
 
   #contact-info a {
-    font-size: 20vw;
+    font-size: 18vw;
     padding: 10px;
   }
 
@@ -304,7 +308,7 @@ h1 {
   }
 
   .project-tile {
-    font-size: 3.2vw;
+    font-size: 2.8vw;
     margin: 20px;
     justify-content: space-around;
   }
