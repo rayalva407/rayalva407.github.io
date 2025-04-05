@@ -1,129 +1,137 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Raymundo Alva</title>
-    <meta name="description" content="Raymundo Alva Software Engineer Portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <nav id="navbar">
-      <h3>Raymundo Alva</h3>
-      <ul>
-        <li><a href="#welcome">Welcome</a></li>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-      
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raymundo Alva - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    
-    <section id="welcome">
-      <img src="assets/Profile Picture.png" alt="My Picture" id="my-image">
-      <h1>Raymundo Alva</h1>
-      <h4>Software Engineer</h4>
-      <div>
-        <a href="https://github.com/rayalva407" target="_blank" rel="noopener noreferrer" id="profile-link" class="icons" title="rayalva407"><i class="fa fa-github" aria-hidden="true"></i>
-        </a>
-        <a href="https://stucklucky.medium.com/" target="_blank" rel="noopener noreferrer" id="profile-link" class="icons" title="@stucklucky"><i class="fa fa-medium" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/raymundoalva/" target="_blank" rel="noopener noreferrer" id="profile-link" class="icons" title="linkedin.com/in/raymundoalva"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.instagram.com/stuck_lucky" target="_blank" rel="noopener noreferrer" id="profile-link" class="icons" title="@stuck_lucky"><i class="fa fa-instagram" aria-hidden="true"></i>
-        <a href="https://steamcommunity.com/profiles/76561198109040042/" target="_blank" rel="noopener noreferrer" class="icons" title="stucklucky"><i class="fa fa-steam" aria-hidden="true"></i>
-        </a>
-      </div>
-    </section>
-    
-    <section id="about-me">
-      
-      <h1>About Me</h1>
-      <div id="about-me-p">
-        <p>
-          <strong>Welcome!</strong><br><br> I'm Raymundo Alva from El Paso, Texas. I am a software engineer with a passion for creating responsive websites and applications. I love to code, music, the outdoors and traveling. Feel free to check out my blog, contact me or take a look at my projects below! :)
-        </p>
-        <br>
-        <p>
-          Some of my favorite technologies are:
-          <br><br>
-            <div id="tech-div">
-              <img src="assets/ruby.png" alt="" class="programming-icons">
-              <img src="assets/rails.png" alt="" class="programming-icons">
-              <img src="assets/html-5.png" alt="" class="programming-icons">
-              <img src="assets/css-3.png" alt="" class="programming-icons">
-              <img src="assets/javascript.png" alt="" class="programming-icons">
-              <img src="assets/react.png" alt="" class="programming-icons">
-          </div>
-        </p>
-      </div>
-    </section>
-    
-    <section id="projects">
-      <h1>My Projects</h1>
-      <div id="tile-section">
-        <div id="home-swap" class="project-tile">
-          <a href="https://github.com/rayalva407/HomeSwapApp" target="_blank" rel="noopener noreferrer">
-            <img src="https://www.sellhousefast.uk/blog/wp-content/uploads/2015/07/house-swapping.v1571324308.jpg" alt="Two homes being swapped" class="project-img">
-            <div class="project-desc">
-              <p><strong>Home Swap</strong> <br><br>
-                A website made on Ruby on Rails for trading homes. Implements user authentication and enables users to create an account, post their homes, and select other user's homes to make trips on the dates of their choosing.
-              </p>
+
+    <div class="container">
+        <section class="hero">
+            <!-- Replace with your image path -->
+            <img src="./assets/Raymundo_Alva.jpg" alt="Raymundo Alva" class="profile-pic">
+            <h1>Raymundo Alva</h1>
+            <h2>Software Engineer</h2>
+            <p>Building intuitive solutions through code</p>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <!-- Replace with your project image -->
+                    <img src="./assets/low-angle-shot-airplane-flight.jpg" alt="Vacation Planner" class="project-image">
+                    <div class="project-content">
+                        <h3>Vacation Planner</h3>
+                        <p>Android application for managing vacations</p>
+                        <div class="tech-stack">
+                            <span class="skill-tag">
+                                <i class="fab fa-java skill-icon"></i>
+                                Java
+                            </span>
+                            <span class="skill-tag">
+                                <i class="fab fa-android skill-icon"></i>
+                                Android Studio
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <!-- Replace with your project image -->
+                    <img src="./assets/calculator.jpg" alt="Calculator App" class="project-image">
+                    <div class="project-content">
+                        <h3>Interactive Calculator</h3>
+                        <p>Web-based calculator with modern UI</p>
+                        <div class="tech-stack">
+                            <span class="skill-tag">
+                                <i class="fab fa-js-square skill-icon"></i>
+                                JavaScript
+                            </span>
+                            <span class="skill-tag">
+                                <i class="fab fa-css3-alt skill-icon"></i>
+                                CSS Grid
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <!-- Replace with your project image -->
+                    <img src="./assets/top-view-sticky-notes-collection.jpg" alt="Sticky Notes" class="project-image">
+                    <div class="project-content">
+                        <h3>Sticky Notes</h3>
+                        <p>Browser-based note-taking app</p>
+                        <div class="tech-stack">
+                            <span class="skill-tag">
+                                <i class="fab fa-js-square skill-icon"></i>
+                                JavaScript
+                            </span>
+                            <span class="skill-tag">
+                                <i class="fas fa-database skill-icon"></i>
+                                Local Storage
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </a>
-        </div>
-          
-    
-        <div id="cycles" class="project-tile">
-          <a href="https://github.com/rayalva407/Cycles" target="_blank" rel="noopener noreferrer">
-            <img src="https://static.vecteezy.com/system/resources/previews/002/204/820/large_2x/menstruation-cycle-calendar-icon-vector.jpg" alt="Menstrual Calendar" class="project-img">
-            <div class="project-desc">
-              <p><strong>Cycles</strong> <br><br>
-                A web application made with HTML/CSS/JS that enables women to track their menstrual cycle by entering menstrual start date. This tool will generate cycle and fertility predictions based on previous cycles. User can add and delete cycle entries.
-              </p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Technical Skills</h2>
+            <div>
+                <span class="skill-tag">
+                    <i class="fab fa-java skill-icon"></i>
+                    Java
+                </span>
+                <span class="skill-tag">
+                    <i class="fab fa-js-square skill-icon"></i>
+                    JavaScript
+                </span>
+                <span class="skill-tag">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    HTML5
+                </span>
+                <span class="skill-tag">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    CSS3
+                </span>
+                <span class="skill-tag">
+                    <i class="fab fa-android skill-icon"></i>
+                    Android Studio
+                </span>
+                <span class="skill-tag">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    Git
+                </span>
             </div>
-          </a>
-        </div>
-    
-        <div id="do-something" class="project-tile" target="_blank" rel="noopener noreferrer">
-          <a href="https://github.com/rayalva407/Do-Something" target="_blank" rel="noopener noreferrer">
-            <img src="https://static.vecteezy.com/system/resources/previews/000/356/165/original/vector-checklist-icon.jpg" class="project-img">
-            <div class="project-desc">
-              <p><strong>Do Something</strong> <br><br>
-                A web application made with React.js and Redux. Get recommendations on what to do when bored. Recommendations are stored in a list to keep track of them. Activities can be sorted by name of activity or type.
-              </p>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    
-    <section id="contact">
-      <img src="assets/my_pic.jpg" alt="My Picture" id="my-image-1">
-      <div id="contact-info">
-        <h1>Let's Keep In Touch!</h1>
-        <div id="contact-icons">
-          <a href="mailto:rayalva407@gmail.com" target="_blank" rel="noopener noreferrer" id="profile-link" class="icons" title="rayalva407@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
-          </a>
-          <a href="tel:+09152717984" target="_blank" rel="noopener noreferrer" id="profile-link" class="icons" title="(915) 271-7984"><i class="fa fa-mobile" aria-hidden="true"></i>
-         </a>
-          <a href="https://github.com/rayalva407" target="_blank" rel="noopener noreferrer" id="profile-link" class="icons" title="rayalva407"><i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-          <a href="https://stucklucky.medium.com/" target="_blank" rel="noopener noreferrer" id="profile-link" class="icons" title="@stucklucky"><i class="fa fa-medium" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/raymundoalva/" target="_blank" rel="noopener noreferrer" id="profile-link" class="icons" title="linkedin.com/in/raymundoalva"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/stuck_lucky" target="_blank" rel="noopener noreferrer" id="profile-link" class="icons" title="@stuck_lucky"><i class="fa fa-instagram" aria-hidden="true"></i>
-          <a href="https://steamcommunity.com/profiles/76561198109040042/" target="_blank" rel="noopener noreferrer" class="icons" title="stucklucky"><i class="fa fa-steam" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-    <script src="" async defer></script>
-  </body>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2023 Raymundo Alva. All rights reserved.</p>
+    </footer>
+</body>
 </html>
