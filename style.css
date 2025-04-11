@@ -44,6 +44,12 @@ nav a {
   transition: color 0.3s;
 }
 
+.project-demo a {
+  color: var(--cyan);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
 nav a:hover {
   color: var(--pink);
 }
